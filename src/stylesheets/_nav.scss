@@ -1,0 +1,32 @@
+// *** Navigation Styles ***
+.nav {
+  position: absolute;
+  right: 0em;
+  top: 2.2em;
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      &:last-child {
+        padding-right: 0;
+      }
+      a,
+      span {
+        display: block;
+        margin-left: 0.7em;
+        padding: 0.8em 1.2em;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        text-transform: $global-text-transform;
+        font-size: 1.1em;
+        outline: 0;
+        color: $color-balloon-txt-span;
+      }
+      &.active a {
+        background: $color-btn-link;
+        border-radius: 5px;
+        color: $color-secondary;
+      }
+    }
+  }
+}
